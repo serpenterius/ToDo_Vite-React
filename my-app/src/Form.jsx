@@ -15,7 +15,7 @@ function Form(props) {
                 id="task-input" className="mb-5 w-3/4 h-10 pl-2 text-white bg-transparent border-violet-600 border-2 rounded-xl duration-500 focus:outline-none focus:bg-violet-500" />
             <button 
                 onClick={() => addTask()} 
-                className="border-2 border-violet-600 p-2 rounded-3xl text-violet-600 duration-500 hover:text-white hover:bg-violet-600"
+                className="border-2 border-violet-600 py-2 px-6 rounded-3xl text-violet-600 duration-500 hover:text-white hover:bg-violet-600"
                 >
                     Добавить
             </button>
