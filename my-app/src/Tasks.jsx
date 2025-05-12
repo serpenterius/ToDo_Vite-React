@@ -16,12 +16,12 @@ function Tasks(props) {
 
     listOfTasks = filteredTasks.map(task => (
         task.completed ? (
-            <li key={task.id} className="w-full py-2 flex justify-between text-violet-400">
+            <li key={task.id} className="w-full py-2 flex justify-between text-violet-400 dark:text-gray-500">
                 {task.text}
                 <button onClick={() => props.deleteTask(task)}>Удалить</button>
             </li>
         ) : (
-            <li key={task.id} className="w-full py-2 flex justify-between text-violet-600">
+            <li key={task.id} className="w-full py-2 flex justify-between text-violet-600 dark:text-gray-400">
                 {task.text}
                 <button onClick={() => props.completeTask(task)}>Выполнить</button>
             </li>

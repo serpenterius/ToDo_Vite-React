@@ -2,9 +2,11 @@ import { useState, useEffect, use } from 'react'
 
 import Form from './Form'
 import Filters from './Filters'
+import Navigation from './Navigation'
+import Tasks from './Tasks'
 
 import './App.css'
-import Tasks from './Tasks'
+
 
 function App() {
 
@@ -52,7 +54,8 @@ function App() {
   }
 
   return (
-    <div className='min-h-screen bg-violet-200 justify-items-center'>
+    <div className='min-h-screen bg-violet-200 justify-items-center dark:bg-gray-600'>
+        <Navigation />
         <Form addTask={handleAddTask} />
         <Filters filter={filter} changeFilter={handleChangeFilter}/>
         <Tasks tasks={tasks}

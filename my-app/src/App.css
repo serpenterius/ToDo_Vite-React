@@ -9,3 +9,7 @@ body {
   font-family: 'Noto Sans';
   font-weight: 400;
 }
+
+.dark body {
+  background-color: #0f172a;
+}
