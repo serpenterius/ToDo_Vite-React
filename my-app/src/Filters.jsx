@@ -1,8 +1,8 @@
 import { useRef, useEffect } from "react";
 
 function Filters(props) {
-    let activeFilter = 'w-1/4 py-1 border-2 border-violet-600 rounded-2xl text-violet-600';
-    let defaultFilter = 'w-1/4 py-1 text-violet-600 border-2 border-transparent rounded-2xl duration-500 hover:border-violet-600 hover:text-violet-100 hover:bg-violet-600';
+    let activeFilter = 'w-32 md:w-32 py-1 px-1 border-2 border-violet-600 rounded-2xl text-violet-600';
+    let defaultFilter = 'w-32 md:w-32 py-1 px-1 text-violet-600 border-2 border-transparent rounded-2xl duration-500 hover:border-violet-600 hover:text-violet-100 hover:bg-violet-600';
 
     let {filter, changeFilter} = props
 
@@ -27,7 +27,7 @@ function Filters(props) {
 
 
     return(
-        <div className="w-1/2 flex justify-around">
+        <div className="w-full md:w-1/2 flex justify-around">
             <button onClick={() => changeFilter('all')} 
                     ref={all}>Все</button>
             <button onClick={() => changeFilter('active')} 

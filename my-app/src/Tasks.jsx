@@ -32,7 +32,7 @@ function Tasks(props) {
     
 
     return(
-        <ul className="w-1/2 p-10 flex flex-col items-start">
+        <ul className="w-full md:w-1/2 p-10 flex flex-col items-start">
             {/* {filteredTasks.map(item => (
                 <li key={item.id} className="w-full py-2 flex justify-between text-violet-600">
                     {item.text}

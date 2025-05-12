@@ -9,7 +9,7 @@ function Form(props) {
     }
 
     return (
-        <div className="w-1/2 flex flex-col items-center py-10">
+        <div className="w-full md:w-1/2 flex flex-col items-center py-10">
             <input
                 ref={inputRef}
                 id="task-input" className="mb-5 w-3/4 h-10 pl-2 text-white bg-transparent border-violet-600 border-2 rounded-xl duration-500 focus:outline-none focus:bg-violet-500" />
